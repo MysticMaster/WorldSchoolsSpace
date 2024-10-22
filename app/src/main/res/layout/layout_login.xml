@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3FC"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="-30dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Đăng nhập"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="sans-serif"
+            android:hint="Enter phone number"
+            android:padding="17dp"
+            android:textSize="13sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="sans-serif"
+            android:hint="Enter password"
+            android:padding="17dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="9dp"
+            android:fontFamily="sans-serif"
+            android:gravity="end"
+            android:text="Forget password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="sans-serif"
+            android:text="Đăng nhâp"
+            android:textColor="@color/white"
+            android:textFontWeight="600" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="or" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_fb"
+                android:drawableStart="@drawable/logo_fb"
+                android:fontFamily="sans-serif"
+                android:paddingStart="20dp"
+                android:text="Facebook"
+                android:textColor="@color/black"
+                android:textFontWeight="600" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_gg"
+                android:drawableStart="@drawable/logo_gg"
+                android:fontFamily="sans-serif"
+                android:paddingStart="20dp"
+                android:text="Google"
+                android:textColor="@color/black"
+                android:textFontWeight="600" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Đăng ký" />
+
+</LinearLayout>
